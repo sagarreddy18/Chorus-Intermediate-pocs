@@ -6,6 +6,8 @@
 // // import 'package:intermediate_poc/sqlflite_poc.dart';
 import 'package:intermediate_poc/battery_level_page.dart';
 import 'package:intermediate_poc/shared_preferences.dart';
+import 'package:intermediate_poc/sqflitePoc/notepage.dart';
+import 'package:intermediate_poc/sqflitePoc/sqflite_poc.dart';
 import 'package:intermediate_poc/username_sharedpreference.dart';
 //
 // void main () {
@@ -42,8 +44,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Google Sign-In POC',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const UsernamePage(),
+      home: NotePage(),
       // home: LoginPage(),
       // home: DioAPiExamples(),
       //   home: BatteryLevelPage()
@@ -51,3 +54,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
